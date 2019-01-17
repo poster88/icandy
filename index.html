@@ -5,34 +5,46 @@
 		<meta charset="utf-8">
 	</head>
 	<style type="text/css">
-		#layer34 {
-			width: 527px;
-			height: 213px;
+		.block_properties {
+			position: absolute;
+		}
+		.body {
+			width: 100%; 
+			height: 100%; 
+			padding: 0px; 
+			margin: 0px;
+		}
+		.wrapper {
+			width: 1500px; 
+			height: 6536px
+		}
+		#img1 {
 			margin-left: 211px;
 			margin-right: 762px;
 		}
 		#tv1 {
 			color: #10B1C9;
-			height: 24px;
-			width: 198px;
 			margin-left: 782px;
 			padding-right: 520px;
 			margin-top: 96px;
+			font-family: 'Abobe Naskh';
+			font-size: 32px;
+			font-weight: 500;
+			text-transform: uppercase;
 		}
 		#tv2 {
-			color: #21B0C6;
-			height: 132px;
-			width: 615px;
+			color: #10B1C9;
 			margin-left: 782px;
 			margin-right: 103px;
 			margin-top: 146px;
+			text-transform: uppercase;
 		}
 	</style>
-	<body style="width: 100%; height: 100%; padding: 0px; margin: 0px;">
-		<div class="wrapper" style="width: 1500px; height: 6536px">
-			<div><img id="layer34" src="images/layer34.png" style="position: absolute"></div>
-			<div id="tv1" style="position: absolute; font-family: 'Abobe Naskh'; font-size: 32px; font-weight: 500">MUST HAVE</div>
-			<div id="tv2" style="position: absolute; ">INTERNAL COMMUNICATION SOLUTIONS TO ADD TO YOUR CART IN 2018</div>
+	<body class="body">
+		<div class="wrapper">
+			<div><img id="img1" class="block_properties" src="images/layer34.png"></div>
+			<div id="tv1" class="block_properties">must have</div>
+			<div id="tv2" class="block_properties">internal comunication solutions to add to your cart in 2018</div>
 		</div>
 	</body>
-	</html>
+</html>
