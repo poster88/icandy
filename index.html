@@ -33,7 +33,6 @@
 			width: 663px;
 			height: 232px;
 			border-radius: 12px;
-			background-color: #ffffff;
 			display: inline-flex;
 		}
 		#layer1 {
@@ -43,8 +42,7 @@
 			background-color: #E23147;
 			z-index: -1;
 		}
-		#card1 {
-			margin-top: 741px;
+		#card {
 			margin-right: 55px;
 			margin-left: 782px;
 		}
@@ -96,29 +94,40 @@
 		#tv5 {
 			width: 143px;
 			height: 23px;
-			margin-top: 683px;/*688*/
-			margin-right: 575px;/*572*/
-			margin-left: 782px;/*785*/
+			margin-top: 683px;
+			margin-right: 575px;
+			margin-left: 782px;
 			font-family: "Arial";
 			color: #ffffff;
 			font-size: 29px;
 			
 		}
 		#tv6 {
-			width: 497px;
+			width: 492px;
 			height: 32px;
-			margin: 1042px 774px 0px 230px;
-			font-size: 42px;
+			margin: 1042px 774px 0px 231px;
+			font-size: 2.6em;
 			font-family: 'Arial';
-			text-align: right;
 		}
 		#tv7 {
-			width: 658px;
-			height: 223px;
-			margin: 1016px 59px 0px 783px;
-			text-align: left;
-			font-size: 29px;
+			width: 646px;
+			height: 237px;
+			margin: 1045px 79px 0px 783px;
+			font-size: 1.81em;
 			font-family: 'Arial';
+			line-height: 1.22;
+			font-stretch: condensed;
+			word-spacing: -1px;
+		}
+		#tv8 {
+			width: 177px;
+			height: 28px;
+			margin: 1382px 540px auto 782px;
+			color: #e53143;
+			font-family: 'Arial';
+			font-size: 1.81em;
+			font-stretch: condensed;
+			word-spacing: -1px;
 		}
 		#line1 {
 			width: 4px;
@@ -139,21 +148,31 @@
 		#img3 {
 			width: 37px;
 			height: 37px;
-			margin-top: 618px;
 			margin-right: 730px;
 			margin-left: 733px;
 			background-color: #ffffff;
 			border-radius: 25px;
 		}
 		#img4 {
-			margin-top: 630px;
 			margin-right: 56px;
 			margin-left: 743px;
+			z-index: 1;
 		}
 		#img5 {
-			margin-top: 618px;
 			margin-right: 92px;
 			margin-left: 1358px;
+		}
+		#img6 {
+			width: 648px;
+			height: 514px;
+			margin: 1621px 418px auto 101px;
+			
+		}
+		#img7 {
+			width: 568px;
+			height: 362px;
+			margin: 1722px 182px auto 750px;
+			z-index: -1;
 		}
 	</style>
 	<body class="body">
@@ -171,12 +190,12 @@
 			<div id="layer1" class="position"></div>
 			<div id="tv3" class="position uppercase">communication audits</div>
 			<div id="tv4" class="position">The age-old problem: how to measure the impact and effectiveness of your communication efforts...</div>
-			<img id="img3" class="position" src="images/- copy.jpg">
-			<img id="img4" class="position" src="images/Object41.png">
-			<img id="img5" class="position" src="images/copy 3.png">
+			<img id="img3" class="position" src="images/- copy.jpg" style="margin-top: 618px; ">
+			<img id="img4" class="position" src="images/Object41.png" style="margin-top: 630px">
+			<img id="img5" class="position" src="images/copy 3.png" style="margin-top: 618px">
 			<div id="tv5" class="position">Interested?</div>
 			<!-- Card 1 start -->
-			<div id="card1" class="position container-card">
+			<div id="card" class="position container-card" style="margin-top: 741px; background-color: #ffffff;">
 				<div style="width: 200px; height: 232px; display: flex; flex-direction: column;">
 					<div style="width: 138px; height: 54px; text-align: center; font-family: 'Arial'; font-size: 25px;
 						margin: 23px 33px 0px 33px"><span>Add this to your IC cart.</span>
@@ -203,11 +222,42 @@
 			<div id="tv6" class="position uppercase">employee playbooks</div>
 			<div id="line1" class="position"></div>
 			<div id="tv7" class="position">
-				<p>You have a corporate narrative but need to make it more relevant for specific roles and locations...</p>
-				<p>Or you're stugging with cascading your srtategy story to all employees in your organisation...</p>
-				<p>Or you need to communicate a charge or transformation initiative...</p>
-				<p>Why not consider developing a digital playbook?</p>
+				<div>You have a corporate narrative but need to make it more relevant for specific roles and locations...</div>
+				<div>Or you're struggling with cascading your strategy story to all employees in your organisation...</div>
+				<div>Or you need to communicate a change or transformation initiative...</div>
+				<div>Why not consider developing a digital playbook?</div>
 			</div>
+			<img id="img3" class="position" src="images/- copy.jpg" style="margin-top: 1316px">
+			<img id="img4" class="position" src="images/Object41.png" style="margin-top: 1328px">
+			<img id="img5" class="position" src="images/+ copy 7.png" style="margin-top: 1316px">
+			<div id="tv8" class="position">Want to play?</div>
+			<!-- Card 2 start -->
+			<div id="card" class="position container-card" style="margin-top: 1436px; background-color: #F8F8F8">
+				<div style="width: 200px; height: 232px; display: flex; flex-direction: column;">
+					<div style="width: 138px; height: 54px; text-align: center; font-family: 'Arial'; font-size: 25px;
+						margin: 23px 33px 0px 33px"><span>Add this to your IC cart.</span>
+					</div>
+					<div><img src="images/add cart_icon_.png" style="margin: 35px 65px auto 57px"></div>
+				</div>
+				<div style="width: 6px; height: 246px; margin-top: -7px; background-color: #ffffff"></div>
+				<div style="width: 457px; height: 232px; display: inline-block">
+					<div style="width: 100%; height: 116px; display: flex;">
+						<div style="width: 57px; height: 24px; font-size: 25px; color: #10b1c9; font-family: 'Arial'; margin: 41px 311px 0px 16px">Shop</div>
+						<img src="images/shop.png" style="width: 36px; height: 41px; margin: 35px 37px 40px 0px;">
+					</div>
+					<div style="width: 100%; height: 3px; background-color: #ECECEC;"></div>
+					<div style="width: 100%; height: 113px; display: flex">
+						<div style="width: 377px; height: 25px; margin: 43px 18px 0px 16px; font-family: 'Arial'; font-size: 25px;
+							color: #8F8F8F">Playbooks<span style="float: right">|</span>
+						</div>
+						<img style="width: 22px; height: 22px; margin: 48px 0px 43px 351px; position: absolute;" src="images/+.png">
+						<img style="width: 22px; height: 22px; margin: 48px 24px 43px 0px" src="images/-.png">
+					</div>
+				</div>
+			</div>
+			<!-- Card 2 end -->
+			<img id="img6" class="position" src="images/Layer 44.png">
+			<img id="img7" class="position" src="images/Layer 43.png">
 			</content>
 			<!-- Content end -->
 			<!-- Footer start -->
