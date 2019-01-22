@@ -6,34 +6,51 @@
 	</head>
 	<style type="text/css">
 		@font-face {
-			font-family: "HelveticaNeueLTCom-Md";
+			font-family: 'HelveticaNeueLTCom-Md';
 			src: url("fonts/HelveticaNeueLTCom-Md.ttf");
 		}
 		@font-face {
-			font-family: "AdobeNaskh-Medium";
+			font-family: 'AdobeNaskh-Medium';
 			src: url("fonts/AdobeNaskh-Medium.otf");
-		}
-		.uppercase {
-			text-transform: uppercase;
-		}
-		.position {
-			position: absolute;
 		}
 		.body {
 			width: 100%
 			height: 100%;
-			padding: 0px;
 			margin: 0px;
 		}
 		.wrapper {
 			width: 1500px;
 			height: 6536px;
 		}
+		/* Text properties */
+		.uppercase {
+			text-transform: uppercase;
+		}
+		.context {
+			font-family: 'Arial';
+			font-size: 1.81em;
+			line-height: 1.22;
+			font-stretch: condensed;
+			word-spacing: -1px;
+		}
+		/* Menu text navigation settings */
+		.navigation {
+			font-family: 'Arial';
+			font-size: 2.6em;
+			text-align: right;
+		}
+		.position {
+			position: absolute;
+		}
 		.container-card {
 			width: 663px;
 			height: 232px;
 			border-radius: 12px;
 			display: inline-flex;
+		}
+		#card {
+			margin-right: 55px;
+			margin-left: 782px;
 		}
 		#layer1 {
 			width: 1500px;
@@ -42,29 +59,23 @@
 			background-color: #E23147;
 			z-index: -1;
 		}
-		#card {
-			margin-right: 55px;
-			margin-left: 782px;
-		}
 		#tv1 {
 			width: 198px;
 			height: 24px;
 			color: #10B1C9;
-			margin-left: 782px;
-			padding-right: 520px;
-			margin-top: 92px;
-			font-family: "AdobeNaskh-Medium";
+			margin: 92px 520px 0 782px;
+			font-family: 'AdobeNaskh-Medium', sans-serif;
 			font-size: 48px;
 			font-weight: 500;
 		}
 		#tv2 {
 			width: 618px;
 			height: 132px;
-			color: #10B1C9;
 			margin-left: 782px;
 			margin-right: 100px;
 			margin-top: 138px;
-			font-family: "HelveticaNeueLTCom-Md";
+			color: #10B1C9;
+			font-family: 'HelveticaNeueLTCom-Md';
 			font-size: 42px;
 			font-weight: bold;
 			line-height: 50px;
@@ -76,58 +87,75 @@
 			margin-top: 510px;
 			margin-left: 351px;
 			margin-right: 780px;
-			font-family: "HelveticaNeueLTCom-Md";
+			font-family: 'HelveticaNeueLTCom-Md';
 			color: #ffffff;
 			text-align: right;
 			font-size: 42px;
 		}
 		#tv4 {
-			width: 640px;
+			width: 646px;
 			height: 62px;
-			margin-top: 516px;
-			margin-right: 77px;
-			margin-left: 783px;
-			font-family: "Arial";
+			margin: 516px 77px 0 783px;
 			color: #ffffff;
 			font-size: 29px;
+			font-family: 'Arial';
 		}
 		#tv5 {
 			width: 143px;
 			height: 23px;
-			margin-top: 683px;
-			margin-right: 575px;
-			margin-left: 782px;
-			font-family: "Arial";
+			margin: 683px 575px 0 782px;
 			color: #ffffff;
 			font-size: 29px;
-			
+			font-family: "Arial";
 		}
 		#tv6 {
 			width: 492px;
 			height: 32px;
-			margin: 1042px 774px 0px 231px;
-			font-size: 2.6em;
-			font-family: 'Arial';
+			margin: 1043px 774px 0 231px;
 		}
 		#tv7 {
 			width: 646px;
 			height: 237px;
-			margin: 1045px 79px 0px 783px;
-			font-size: 1.81em;
-			font-family: 'Arial';
-			line-height: 1.22;
-			font-stretch: condensed;
-			word-spacing: -1px;
+			margin: 1044px 79px 0 782px;
 		}
 		#tv8 {
 			width: 177px;
 			height: 28px;
-			margin: 1382px 540px auto 782px;
+			margin: 1382px 540px 0 782px;
 			color: #e53143;
-			font-family: 'Arial';
-			font-size: 1.81em;
-			font-stretch: condensed;
-			word-spacing: -1px;
+		}
+		#tv9 {
+			width: 257px;
+			height: 82px;
+			margin: 2182px 774px 0 465px;
+		}
+		#tv10 {
+			width: 656px;
+			height: 203px;
+			margin: 2179px 63px 0 781px;
+			align-items: left;
+		}
+		#tv11 {
+			width: 625px;
+			height: 98px;
+			margin: 2471px 104px 0 781px;
+			color: #e53143;
+		}
+		#tv12 {
+			width: 129px;
+			height: 32px;
+			margin: 3149px 779px 0px 592px;
+		}
+		#tv13 {
+			width: 646px;
+			height: 133px;
+			margin: 3150px 71px 0 783px;
+		}
+		#tv14 {
+			width: 512px;
+			height: 63px;
+			margin: 3386px 209px 0 783px;
+			color: #e53143;
 		}
 		#line1 {
 			width: 4px;
@@ -165,14 +193,25 @@
 		#img6 {
 			width: 648px;
 			height: 514px;
-			margin: 1621px 418px auto 101px;
+			margin: 1621px 418px 0 101px;
 			
 		}
 		#img7 {
 			width: 568px;
 			height: 362px;
-			margin: 1722px 182px auto 750px;
+			margin: 1722px 182px 0 750px;
 			z-index: -1;
+		}
+		#img8 {
+			width: 930px;
+			height: 513px;
+			margin: 2376px 780px 0 -210px;
+		}
+		#img9 {
+			margin: 2933px 0 0 754px;
+		}
+		#img10 {
+			margin: 3739px 779px 0 0;
 		}
 	</style>
 	<body class="body">
@@ -189,7 +228,7 @@
 			<img id="img2" class="position" src="images/Layer_85_copy 4.png">
 			<div id="layer1" class="position"></div>
 			<div id="tv3" class="position uppercase">communication audits</div>
-			<div id="tv4" class="position">The age-old problem: how to measure the impact and effectiveness of your communication efforts...</div>
+			<div id="tv4" class="position">The age-old problem: how to measure the impact and effectiveness of your communication efforts<td>…</td></div>
 			<img id="img3" class="position" src="images/- copy.jpg" style="margin-top: 618px; ">
 			<img id="img4" class="position" src="images/Object41.png" style="margin-top: 630px">
 			<img id="img5" class="position" src="images/copy 3.png" style="margin-top: 618px">
@@ -219,18 +258,18 @@
 				</div>
 			</div>
 			<!-- Card 1 end -->
-			<div id="tv6" class="position uppercase">employee playbooks</div>
+			<div id="tv6" class="position uppercase navigation">employee playbooks</div>
 			<div id="line1" class="position"></div>
-			<div id="tv7" class="position">
-				<div>You have a corporate narrative but need to make it more relevant for specific roles and locations...</div>
-				<div>Or you're struggling with cascading your strategy story to all employees in your organisation...</div>
-				<div>Or you need to communicate a change or transformation initiative...</div>
+			<div id="tv7" class="position context">
+				<div>You have a corporate narrative but need to make it more relevant for specific roles and locations<td>…</td></div>
+				<div>Or you're struggling with cascading your strategy story to all employees in your organisation<td>…</td></div>
+				<div>Or you need to communicate a change or transformation initiative<td>…</td></div>
 				<div>Why not consider developing a digital playbook?</div>
 			</div>
 			<img id="img3" class="position" src="images/- copy.jpg" style="margin-top: 1316px">
 			<img id="img4" class="position" src="images/Object41.png" style="margin-top: 1328px">
 			<img id="img5" class="position" src="images/+ copy 7.png" style="margin-top: 1316px">
-			<div id="tv8" class="position">Want to play?</div>
+			<div id="tv8" class="position context">Want to play?</div>
 			<!-- Card 2 start -->
 			<div id="card" class="position container-card" style="margin-top: 1436px; background-color: #F8F8F8">
 				<div style="width: 200px; height: 232px; display: flex; flex-direction: column;">
@@ -258,6 +297,80 @@
 			<!-- Card 2 end -->
 			<img id="img6" class="position" src="images/Layer 44.png">
 			<img id="img7" class="position" src="images/Layer 43.png">
+			<div id="tv9" class="position uppercase navigation">employees apps</div>
+			<div id="tv10" class="position context">
+				<div>You've heard it all before <td>–</td> BYOD, the digital workplace, mobile first, the Gig economy<td>…</td>but what does this mean for you? It means you need to consider how you better engage with employees in this changing workplace.</div>
+				<div>An employee app can be the answer.</div>
+			</div>
+			<img id="img8" class="position" src="images/НОУТ.jpg" >
+			<img id="img3" class="position" src="images/- copy.jpg" style="margin-top: 2414px">
+			<img id="img4" class="position" src="images/Object41.png" style="margin-top: 2426px">
+			<img id="img5" class="position" src="images/+ copy 7.png" style="margin-top: 2414px">
+			<div id="tv11" class="position context">Many companies globally have seen the value in incorporating a branded employee app into their communication mix. Perhaps you should too?</div>
+			<!-- Card 3 start -->
+			<div id="card" class="position container-card" style="margin-top: 2600px; background-color: #F8F8F8">
+				<div style="width: 200px; height: 232px; display: flex; flex-direction: column;">
+					<div style="width: 138px; height: 54px; text-align: center; font-family: 'Arial'; font-size: 25px;
+						margin: 23px 33px 0px 33px"><span>Add this to your IC cart.</span>
+					</div>
+					<div><img src="images/add cart_icon_.png" style="margin: 35px 65px auto 57px"></div>
+				</div>
+				<div style="width: 6px; height: 246px; margin-top: -7px; background-color: #ffffff"></div>
+				<div style="width: 457px; height: 232px; display: inline-block">
+					<div style="width: 100%; height: 116px; display: flex;">
+						<div style="width: 57px; height: 24px; font-size: 25px; color: #10b1c9; font-family: 'Arial'; margin: 41px 311px 0px 16px">Shop</div>
+						<img src="images/shop.png" style="width: 36px; height: 41px; margin: 35px 37px 40px 0px;">
+					</div>
+					<div style="width: 100%; height: 3px; background-color: #ECECEC;"></div>
+					<div style="width: 100%; height: 113px; display: flex">
+						<div style="width: 377px; height: 25px; margin: 43px 18px 0px 16px; font-family: 'Arial'; font-size: 25px;
+							color: #8F8F8F">Employee app<span style="float: right">|</span>
+						</div>
+						<img style="width: 22px; height: 22px; margin: 48px 0px 43px 351px; position: absolute;" src="images/+.png">
+						<img style="width: 22px; height: 22px; margin: 48px 24px 43px 0px" src="images/-.png">
+					</div>
+				</div>
+			</div>
+			<!-- Card 3 end -->
+			<img id="img9" src="images/Layer 85 copy 6.png" class="position">
+			<div id="tv12" class="position uppercase navigation">video</div>
+			<div id="tv13" class="position context">
+				<div>Video content still rules as the top internal communication tool.</div>
+				<div>As your remote workforce grows, video will be your go to, to reach and engage all employees.</div>
+			</div>
+			<img id="img3" class="position" src="images/- copy.jpg" style="margin-top: 3313px">
+			<img id="img4" class="position" src="images/Object41.png" style="margin-top: 3328px">
+			<img id="img5" class="position" src="images/+ copy 7.png" style="margin-top: 3316px">
+			<div id="tv14" class="position context">Want to make video the star in your next internal campaign?</div>
+			<!--  Card 4 start -->
+			<div id="card" class="position container-card" style="margin-top: 3471px; background-color: #F8F8F8">
+				<div style="width: 200px; height: 232px; display: flex; flex-direction: column;">
+					<div style="width: 138px; height: 54px; text-align: center; font-family: 'Arial'; font-size: 25px;
+						margin: 23px 33px 0px 33px"><span>Add this to your IC cart.</span>
+					</div>
+					<div><img src="images/add cart_icon_.png" style="margin: 35px 65px auto 57px"></div>
+				</div>
+				<div style="width: 6px; height: 246px; margin-top: -7px; background-color: #ffffff"></div>
+				<div style="width: 457px; height: 232px; display: inline-block">
+					<div style="width: 100%; height: 116px; display: flex;">
+						<div style="width: 57px; height: 24px; font-size: 25px; color: #10b1c9; font-family: 'Arial'; margin: 41px 311px 0px 16px">Shop</div>
+						<img src="images/shop.png" style="width: 36px; height: 41px; margin: 35px 37px 40px 0px;">
+					</div>
+					<div style="width: 100%; height: 3px; background-color: #ECECEC;"></div>
+					<div style="width: 100%; height: 113px; display: flex">
+						<div style="width: 377px; height: 25px; margin: 43px 18px 0px 16px; font-family: 'Arial'; font-size: 25px;
+							color: #8F8F8F">Video<span style="float: right">|</span>
+						</div>
+						<img style="width: 22px; height: 22px; margin: 48px 0px 43px 351px; position: absolute;" src="images/+.png">
+						<img style="width: 22px; height: 22px; margin: 48px 24px 43px 0px" src="images/-.png">
+					</div>
+				</div>
+			</div>
+			<!--  Card 4 end -->
+			<img id="img10" src="images/Layer 85 copy 7.png" class="position">
+			<img id="img3" class="position" src="images/- copy.jpg" style="margin-top: 4116px">
+			<img id="img4" class="position" src="images/Object41.png" style="margin-top: 4128px">
+			<img id="img5" class="position" src="images/copy 3.png" style="margin-top: 4116px">
 			</content>
 			<!-- Content end -->
 			<!-- Footer start -->
