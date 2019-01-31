@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>new icandy</title>
+		<style type="text/css">
+			.body {
+				margin: 0;
+				padding: 0;
+			}
+			.wrapper {
+				max-width: 1500px;
+				max-height: 6536px;
+				width: 100%;
+				margin: 0 auto;
+			}
+			.flex-container {
+				display: flex;
+				flex-direction: row;
+			}
+			.content {
+				background-color: #fafafa; /* test color */
+			}
+			.row {
+				width: 50%;
+				background-color: #f5f5f5; /* test color */
+			}
+			.right {
+				margin-left: 31px;
+			}
+			.left {
+				margin-right: 31px;
+			}
+			.text-uppercase {
+				text-transform: uppercase;
+			}
+			#img1 {
+				float: right;
+				margin-right: -16px;
+				width: 70.26%; /* item_width * 100% / parent_width */
+			}
+			#tv1 {
+				color: #10B1C9;
+				font-family: 'AdobeNaskh-Medium';
+				font-size: 42px;
+				float: left;
+				margin-top: 92px;
+			}
+			#tv2 {
+				color: #10B1C9;
+				font-family: 'HelveticaNeueLTCom-Md';
+				font-size: 2.6em;
+				font-weight: bold;
+				letter-spacing: 0.4px;
+				float: left;
+			}
+		</style>
+	</head>
+	<body class="body">
+		<div class="wrapper">
+			<!-- content start -->
+			<div class="content flex-container">
+				<!-- row: left start -->
+				<div class="row left">
+					<img id="img1" src="images/layer34.png">
+				</div>
+				<!-- row: left end -->
+				<!-- row: right start -->
+				<div class="row right">
+					<div id="tv1" class="text-uppercase">
+						must have
+					</div>
+					<div id="tv2" class="text-uppercase">internal communication solutions to add to your cart in 2018
+					</div>
+				</div>
+				<!-- row: right end -->
+			</div>
+			<!-- content end -->
+		</div>
+	</body>
+</html>
