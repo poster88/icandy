@@ -3,6 +3,14 @@
 	<head>
 		<title>new icandy</title>
 		<style type="text/css">
+			@font-face {
+				font-family: 'HelveticaNeueLTCom-Md';
+				src: url("fonts/HelveticaNeueLTCom-Md.ttf");
+			}
+			@font-face {
+				font-family: 'AdobeNaskh-Medium';
+				src: url("fonts/AdobeNaskh-Medium.otf");
+			}
 			.body {
 				margin: 0;
 				padding: 0;
@@ -36,12 +44,17 @@
 			#img1 {
 				float: right;
 				margin-right: -16px;
-				width: 70.26%; /* item_width * 100% / parent_width */
+			}
+			#img2 {
+				max-width: 685px;
+				float: left;
+				position: absolute;
+				top: 284px;
 			}
 			#tv1 {
 				color: #10B1C9;
 				font-family: 'AdobeNaskh-Medium';
-				font-size: 42px;
+				font-size: 3em;
 				float: left;
 				margin-top: 92px;
 			}
@@ -52,6 +65,8 @@
 				font-weight: bold;
 				letter-spacing: 0.4px;
 				float: left;
+				position: absolute;
+				margin-top: 137px;
 			}
 		</style>
 	</head>
@@ -61,15 +76,17 @@
 			<div class="content flex-container">
 				<!-- row: left start -->
 				<div class="row left">
-					<img id="img1" src="images/layer34.png">
+					<div style="height: 399px; position: relative;">
+						<img id="img1" src="images/layer34.png">
+						<img id="img2" src="images/Layer_85_copy 4.png">
+					</div>
 				</div>
 				<!-- row: left end -->
 				<!-- row: right start -->
 				<div class="row right">
-					<div id="tv1" class="text-uppercase">
-						must have
-					</div>
-					<div id="tv2" class="text-uppercase">internal communication solutions to add to your cart in 2018
+					<div style="height: 399px; position: relative;">
+						<div id="tv1" class="text-uppercase">must have</div>
+						<div id="tv2" class="text-uppercase">internal communication solutions to add to your cart in 2018</div>
 					</div>
 				</div>
 				<!-- row: right end -->
